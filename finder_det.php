@@ -33,7 +33,7 @@ AND c.categories_id ='$id'
 		while ($row = mysql_fetch_array($sql)) {
 				$id = $row['c_categories_id'];
 				$data = $row['pd_products_name'];
-				echo '<option value="http://www.tintenpatronen-toner-24.de/'.$row['cd1_gm_url_keywords'].'/'.$row['cd_gm_url_keywords'].'/'.$row['pd_gm_url_keywords'].'.html'.'">'.$data.'</option>';
+				echo '<option value="'.$row['cd1_gm_url_keywords'].'/'.$row['cd_gm_url_keywords'].'/'.$row['pd_gm_url_keywords'].'.html'.'">'.$data.'</option>';
 		}
 }
 ?>
